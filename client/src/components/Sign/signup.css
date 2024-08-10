@@ -1,0 +1,45 @@
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+   width: 50%;
+}
+.section h1{
+    text-align: center;
+    margin: 20px;
+    font: 2rem sans-serif;
+    font-weight: 700;
+}
+.signform{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.signform input{
+   width: 100%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    
+}
+.signform button{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
