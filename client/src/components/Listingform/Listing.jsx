@@ -1,62 +1,44 @@
 import React from 'react'
-import '../Listingform/listing.css'
+import styles from '../Listingform/Listing.module.css'
 
 export default function Listing() {
   return (
-    <form action="">
-    <div class="box">
-        <h2>Creating a Listing</h2>
-        <span class="line"></span>
-        <div class="inside">
-            <div class="hea1">
-                <input type="text" class="first" placeholder="Name"/>
-            </div>
-            <div class="che">
-                <input type="text" class="second" placeholder="Discription"/>
-            </div>
-            <div class="hea2">
-                <input type="text" class="third" placeholder="Address"/>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                <label class="form-check-label" for="flexCheckDefault">
-                  Sell
-                </label>
-            </div>
-            <div class="form-check1">
-                <input class="form-check-input1" type="checkbox" value="" id="flexCheckChecked" />
-                <label class="form-check-label1" for="flexCheckChecked">
-                  Rent
-                </label>
-            </div>
-            <div class="form-check2">
-                <input class="form-check-input2" type="checkbox" value="" id="flexCheckChecked" />
-                <label class="form-check-label2" for="flexCheckChecked">
-                  Parking Spot
-                </label>
-            </div>
-            <div class="form-check3">
-                <input class="form-check-input3" type="checkbox" value="" id="flexCheckChecked" />
-                <label class="form-check-label3" for="flexCheckChecked">
-                  Furnished
-                </label>
-            </div>
-            <div class="form-check4">
-                <input class="form-check-input4" type="checkbox" value="" id="flexCheckChecked"/>
-                <label class="form-check-label4" for="flexCheckChecked">
-                  Offer
-                </label>
-            </div>
-
-            <div class="hea3">Beds<input type="text" class="forth" placeholder="1"/>
-            </div>
-            <div class="hea4">Baths<input type="text" class="five" placeholder="1"/>
-            </div>
-            <div class="hea5">Regular Price<input type="text" class="six" placeholder="0"/>
-            </div>
-            
-        </div>
-   </div>
-</form>
+    <>
+    <h1 className={styles.heading}>Creating a Listing</h1>
+      <div className={styles.formContainer}>
+        
+        <form id="login-form" className={styles.form}>
+          <div className={styles.field}>
+            <input type="text" name="name" placeholder="Name" />
+            <textarea rows="4" cols="54" className={styles.desc} name="Email" placeholder="Description"></textarea>
+            <input type="text" name="password" placeholder="Address" />
+          </div>
+          <div className={styles.checkboxGroup}>
+            <label><input type="checkbox" id="sell" />Sell</label>
+            <label><input type="checkbox" id="rent" />Rent</label>
+            <label><input type="checkbox" id="parking-spot" />Parking spot</label>
+            <label><input type="checkbox" id="furnished" />Furnished</label>
+            <label><input type="checkbox" id="offer" />Offer</label>
+          </div>
+          <div className={styles.formGroup}>
+            <input type="number" id="beds" defaultValue="1" min="0" />
+            <label htmlFor="beds">Beds</label>
+            <input type="number" id="baths" defaultValue="1" min="0" />
+            <label htmlFor="baths">Baths</label>
+          </div>
+          <div className={styles.formGroups}>
+            <input type="number" id="price" defaultValue="0" min="0" />
+            <label htmlFor="price">Regular price<br />($ / Month)</label>
+          </div>
+          </form>
+          <div className={styles.inputGroup}>
+            <label htmlFor="images">Images: The first image will be the cover (max 6)</label>
+            <input type="file" id="images" name="images" multiple />
+            <button className={styles.uploadBtn}>Upload</button>
+            <button className={styles.createBtn}>Create Listing</button>
+          </div>
+        
+      </div>
+    </>
   )
 }
