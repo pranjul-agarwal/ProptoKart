@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.formContainer {
+  max-width: 1000px;
+
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.heading {
+  /* margin-bottom: -10px;  */
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.field input {
+  width: 500px;
+  height: 35px;
+  background: transparent;
+  background-color: #fff;
+  border: 1px solid #1d1d1c;
+  border-radius: 8px;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  padding-left: 10px;
+}
+
+.desc {
+  width: 500px;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  border: 1px solid #1d1d1c;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.checkboxGroup {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: start;
+  gap: 2%;
+  margin-top: 10px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: start;
+  gap: 2%;
+  margin-top: 10px;
+}
+
+.formGroup input {
+  width: 50px;
+  height: 20px;
+  border: 2px solid #1d1d1c;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formGroups {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: start;
+  gap: 2%;
+  margin-top: 10px;
+}
+
+.formGroups input {
+  width: 60px;
+  height: 20px;
+  border: 2px solid #1d1d1c;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.inputGroup input[type="text"],
+.inputGroup input[type="file"] {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.inputGroup input[type="file"] {
+  padding: 5px;
+}
+
+.uploadBtn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #1eff0004;
+  color: green;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px;
+  border: solid 1px black;
+  margin-left: 20px;
+}
+
+.uploadBtn:hover {
+  background-color: #01070f;
+}
+
+.createBtn {
+  display: block;
+  /* width: 100%; */
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 40px;
+  width: 350px;
+  margin-left: 20px;
+}
+
+.createBtn:hover {
+  background-color: #555;
+}
+
+/* @media (max-width: 768px) {
+  .formContainer {
+    height: auto; 
+    flex-direction: column; 
+    padding: 10px;
+  }
+
+  .field input, 
+  .inputGroup input[type="text"],
+  .inputGroup input[type="file"] {
+    width: 50%; 
+    margin: 10px 0;
+  }
+
+  .formGroup,
+  .formGroups {
+    flex-direction: column; 
+  }
+
+  .uploadBtn,
+  .createBtn {
+    width: 80%; 
+    margin-left: 0; 
+  }
+
+  .formContainer h2 {
+    position: static; 
+    font-size: 18px; 
+  }
+}  
+*/
