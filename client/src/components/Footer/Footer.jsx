@@ -51,7 +51,7 @@ const Footer = () => {
           <span className="underline"></span>
           <div className="last">
             <p className="last-text">MADE WITH</p>
-            <p className="last-text1">© ACCULIZEIN TECH PVT. LTD.</p>
+            <p className="last-text1">© ACCULIZEIN TECH</p>
           </div>
         </div>
       </footer>
