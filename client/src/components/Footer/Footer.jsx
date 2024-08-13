@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           <div className="column2">
             <h2>ENQUIRE</h2>
-            <form>
+            <form className='footerform'>
               <input type="text" placeholder="NAME" required />
             </form>
             <form className="form2">
@@ -50,8 +50,8 @@ const Footer = () => {
           </div>
           <span className="underline"></span>
           <div className="last">
-            <p className="last-text">MADE WITH</p>
-            <p className="last-text1">© ACCULIZEIN TECH</p>
+            <p className="last-text">MADE BY © ACCULIZEIN TECH </p>
+    
           </div>
         </div>
       </footer>

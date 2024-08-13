@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 100px;
+
 }
 .section{
     display: flex;
@@ -42,4 +46,18 @@
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000; /* Ensure text color is visible */
+    background-color: #fff; /* Ensure background color is visible */
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder {
+    color: #888; /* Placeholder color */
 }
