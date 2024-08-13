@@ -55,7 +55,7 @@ export default function Header() {
         </div>
         <div className="flex flex-1 justify-between items-center mx-4">
         <form className=' flex-1 flex justify-center bg-slate-100 p-2 rounded-lg mx-4'>
-          <input type="text" placeholder="Search" className='w-full max-w-md p-1 rounded-md focus:outline-none border border-gray-300 sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg '/>
+          <input type="text" placeholder="Search" className='w-full max-w-md p-1 rounded-md focus:outline-none border border-black-300 sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg '/>
         </form>
         
         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
