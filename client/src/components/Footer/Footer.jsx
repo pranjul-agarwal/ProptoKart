@@ -50,8 +50,8 @@ const Footer = () => {
           </div>
           <span className="underline"></span>
           <div className="last">
-            <p className="last-text">MADE WITH KNOWLEDGE FOR</p>
-            <p className="last-text1">© UODE INTERACTIVE</p>
+            <p className="last-text">MADE WITH</p>
+            <p className="last-text1">© ACCULIZEIN TECH PVT. LTD.</p>
           </div>
         </div>
       </footer>
