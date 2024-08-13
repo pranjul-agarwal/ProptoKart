@@ -7,11 +7,15 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Header from './components/Header'
 import Listing from './pages/Listing'
-
+import Footer from './components/Footer/Footer.jsx'
+import './App.css'
 
 export default function App() {
-  return <BrowserRouter>
-  <Header/>
+  return( 
+  <div className="app-container">
+  <Header />
+   <div className="main-content">
+   <BrowserRouter>
   <Routes>
     <Route path="/" element={<Home />} />
    <Route path="/profile" element={<Profile />} /> 
@@ -21,5 +25,8 @@ export default function App() {
     <Route path="/listing" element={<Listing />} />
   </Routes>
   </BrowserRouter>
-  
+  </div>
+  <Footer/>
+  </div>
+  )
 }
