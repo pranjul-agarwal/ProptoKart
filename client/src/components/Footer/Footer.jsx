@@ -6,7 +6,7 @@ import 'material-icons/iconfont/material-icons.css'; // Ensure you have installe
 const Footer = () => {
   return (
     <div>
-      <footer> 
+      <footer>
         <div className="row">
           <div className="column">
             <h2>CONTACT</h2>
@@ -14,9 +14,9 @@ const Footer = () => {
             <p className="para">luxury residential life around</p>
             <p className="para">the world.</p>
             <p className="letter">A:</p>
-            <p className="inside">SeeStrasse 21, Zurich, CH</p>
+            <p className="inside">Acculizein Tech Pvt. Ltd</p>
             <p className="letters">T:</p>
-            <p className="inside">99 4 11 78 70 14</p>
+            <p className="inside">+919999999999</p>
           </div>
           <div className="column1">
             <h2>USEFUL LINKS</h2>
@@ -46,7 +46,7 @@ const Footer = () => {
               <i className='bx bxl-instagram'></i>
               <i className='bx bxl-youtube'></i>
               <i className='bx bxl-linkedin-square'></i>
-            </div> 
+            </div>
           </div>
           <span className="underline"></span>
           <div className="last">
