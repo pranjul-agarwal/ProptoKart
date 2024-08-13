@@ -15,7 +15,7 @@ export default function Signup() {
       [e.target.id]:e.target.value,
         });
   };
-  console.log(formData)
+  
   const handleSubmit=async(e)=>{
     e.preventDefault();
     try{
@@ -50,7 +50,7 @@ export default function Signup() {
         <form className='signform' onSubmit={handleSubmit}>
             <input type="text" placeholder='Username' id='username' onChange={handleChange} />
             <input type="email" placeholder='Email' id='email' onChange={handleChange} />
-            <input type="password" placeholder='Password' id='password' onChange={handleChange}  />
+            <input type="password" placeholder='Password' id='password' onChange={handleChange} />
             <button disabled={loading} type='submit' >
               {loading ? 'Loading...':'Sign Up'}
             </button>
