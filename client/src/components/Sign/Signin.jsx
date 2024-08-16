@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Sign/signup.css'
+import OAuth from '../OAuth.jsx'
 
 import { Link,useNavigate } from 'react-router-dom'
 import { useState } from 'react'
@@ -51,9 +52,10 @@ export default function SignIn() {
           
             <input type="email" placeholder='Email' id='email' onChange={handleChange} />
             <input type="password" placeholder='Password' id='password' onChange={handleChange} />
-            <button disabled={loading} type='submit' >
+            <button className='signbutton' disabled={loading} type='submit' >
               {loading ? 'Loading...':'Sign In'}
             </button>
+            <OAuth/>
         </form>
         <div className='flex gap-2 mt-2'>
             <p>Don't have an account?</p>

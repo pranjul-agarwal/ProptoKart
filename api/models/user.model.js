@@ -13,7 +13,11 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-    }
+    },
+    avatar: {
+        type: String,
+        default: "https://png.pngtree.com/png-clipart/20210915/ourmid/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
+    },
 
 }, { timestamps: true });
 
