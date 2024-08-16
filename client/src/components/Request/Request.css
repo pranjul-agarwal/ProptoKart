@@ -1,0 +1,128 @@
+.request-body {
+    margin: 0;
+   padding: 0; 
+    /* display: flex;
+   justify-content: center;
+   align-items: center; 
+   height: 100vh; */
+
+
+   width: 100%;
+    height: calc(120vh - 120px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+  
+}
+
+.container {
+   background-color: #fff;
+   padding: 6rem;
+   border-radius: 10px;
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+   width: 400px;
+   margin-top: 100px;
+  
+}
+
+.form-container h1 {
+   text-align: center;
+   margin-bottom: 1.5rem;
+   margin-top: -50px;
+   font-size: 30px;
+   letter-spacing: 10px;
+}
+
+form input, form textarea {
+   width: 100%;
+   padding: 0.75rem;
+   margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   letter-spacing: 5px;
+   font-size: 14px;
+   display: flex;
+   justify-content: center;
+   border-radius: 10px;
+   
+}
+
+.date-time {
+   display: flex;
+   justify-content: space-between;
+}
+
+.date-time input[type="date"], 
+.date-time input[type="time"] {
+   width: 40%;
+}
+
+form button {
+   background-color: #C97A45;
+   color: white;
+   padding: 0.75rem;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   width: 100%;
+   transition: background-color 0.3s ease;
+   
+}
+
+form button:hover {
+   background-color: yellow;
+}
+
+
+.back{
+   width: 100%;
+   
+   background-image: url('../../assets/request.jpg');
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+   body {
+       height: auto; /* Adjust the height to auto for mobile screens */
+       margin: 0;
+   }
+
+   .container {
+       width: 90%; /* Adjust width to be more responsive */
+       margin-top: 20px; /* Adjust margin-top for better placement */
+       padding: 1.5rem; /* Adjust padding for smaller screens */
+   }
+
+   .form-container h1 {
+       font-size: 24px; /* Adjust font size for smaller screens */
+       letter-spacing: 5px; /* Reduce letter spacing for readability */
+   }
+
+   form input, form textarea {
+       font-size: 12px; /* Adjust font size for inputs and textarea */
+       padding: 0.5rem; /* Adjust padding for smaller screens */
+   }
+
+   .date-time {
+       flex-direction: column; /* Stack date and time vertically */
+   }
+
+   .date-time input[type="date"], 
+   .date-time input[type="time"] {
+       width: 100%; /* Make date and time inputs full width */
+       margin-bottom: 0.5rem; /* Add some spacing between date and time inputs */
+   }
+
+   form button {
+       font-size: 14px; /* Adjust button font size for smaller screens */
+   }
+}
