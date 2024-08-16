@@ -1,8 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './Schedule.css'
 import scheduleImg from '../../../assets/home-1-background-patern-2.jpg'
 
 const Schedule = () => {
+  const navigate = useNavigate();
+
+  const handleRequestClick = () => {
+    navigate('/request');
+  };
   return (
     <div>
       <div className="scheduleimg">
@@ -14,7 +20,7 @@ const Schedule = () => {
            
            </div>
           <div  className="request">
-            <button onclick="" >Request</button>
+            <button onClick={handleRequestClick} >Request</button>
           </div>
         </div>
        

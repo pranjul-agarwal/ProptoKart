@@ -21,7 +21,7 @@
    padding: 6rem;
    border-radius: 10px;
    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-   width: 400px;
+   
    margin-top: 100px;
   
 }
@@ -73,9 +73,7 @@ form button {
    
 }
 
-form button:hover {
-   background-color: yellow;
-}
+
 
 
 .back{
@@ -90,8 +88,10 @@ form button:hover {
 
 
 
+
+
 @media (max-width: 768px) {
-   body {
+   .request-body {
        height: auto; /* Adjust the height to auto for mobile screens */
        margin: 0;
    }
